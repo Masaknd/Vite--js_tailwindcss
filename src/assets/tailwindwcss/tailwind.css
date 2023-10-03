@@ -8,7 +8,6 @@
 .bg-primary {
   @apply bg-primary-light bg-repeat bg-contain bg-top;
 }
-
 .bg-secondary {
   @apply bg-secondary-dark bg-repeat bg-cover bg-top;
 }

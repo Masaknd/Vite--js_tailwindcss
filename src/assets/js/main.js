@@ -4,10 +4,10 @@ import "../tailwindwcss/tailwind.css";
 /*------------------------------------------------------
  Background Images: redefining absolute paths for Build
 ------------------------------------------------------*/
-import bgPrimary from '../images/bg-main@2x.png'
-document.querySelector('.bg-primary').style.background = `url(${bgPrimary})`
-import bgSecondary from '../images/bg-sub@2x.png'
-document.querySelector('.bg-secondary').style.background = `url(${bgSecondary})`
+// import bgPrimary from '../images/bg-main@2x.png'
+// document.querySelector('.bg-primary').style.background = `url(${bgPrimary})`
+// import bgSecondary from '../images/bg-sub@2x.png'
+// document.querySelector('.bg-secondary').style.background = `url(${bgSecondary})`
 
 
 /*------------------------------------------------------
