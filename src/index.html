@@ -1,0 +1,1174 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Hanuman:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.0.0/dist/css/yakuhanjp.css" />
+    <script src="https://kit.fontawesome.com/2c84373c3c.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js" type="module"></script>
+    <link rel="stylesheet" href="./assets/tailwindwcss/tailwind.css">
+
+    <title>Front-Enders</title>
+  </head>
+
+  <body class="bg-primary text-primary-regular">
+    <!-- Header Section -->
+    <header id="header" class="z-10 fixed top-0 left-0 min-w-full w-full backdrop-blur-sm">
+      <!-- Header Container -->
+      <div class="max-w-7xl mx-auto py-3 px-8 md:py-3 md:px-6">
+        <div class="flex flex-row justify-between items-center">
+          <h1 id="logo" class="z-40 font-logo text-xl sm:text-3xl lg:text-4xl font-semibold duration-300"><a class="block" href="#">Front-Enders</a></h1>
+          <!-- Drop-down Menu and Nav Buttons -->
+          <nav class="">
+            <ul class="relative md:flex flex-row justify-between max-w-4xl">
+              <li class="btn-nav">
+                <a href="#about" class="inline-block py-2 lg:py-4 px-14 lg:px-14 font-sans font-medium text-sm lg:text-base">About</a>
+              </li>
+              <li class="btn-nav">
+                <button class="inline-block py-2 lg:py-4 px-14 lg:px-14 font-sans font-medium text-sm lg:text-base">Dev</button>
+                <ul class="menu">
+                  <li class="w-full"><a class="menu-item" href="#dev">Dev Tools</a></li>
+                  <li class="w-full"><a class="menu-item" href="#html">HTML</a></li>
+                  <li class="w-full"><a class="menu-item" href="#css">CSS</a></li>
+                  <li class="w-full"><a class="menu-item" href="#js">JavaScript</a></li>
+                  <li class="w-full"><a class="menu-item" href="#deploy">Deployment</a></li>
+                  <li class="w-full"><a class="menu-item" href="#communites">Communities</a></li>
+                </ul>
+              </li>
+              <li class="btn-nav">
+                <button class="inline-block py-2 lg:py-4 px-14 lg:px-14 font-sans font-medium text-sm lg:text-base">Design</button>
+                <ul class="menu">
+                  <li class="w-full"><a class="menu-item" href="#images">Images &amp; Videos</a></li>
+                  <li class="w-full"><a class="menu-item" href="#fonts">Fonts</a></li>
+                  <li class="w-full"><a class="menu-item" href="#icons">Icons</a></li>
+                  <li class="w-full"><a class="menu-item" href="#color">Color</a></li>
+                  <li class="w-full"><a class="menu-item" href="#design">Design</a></li>
+                  <li class="w-full"><a class="menu-item" href="#interaction">Interaction</a></li>
+                  <li class="w-full"><a class="menu-item" href="#components">Components</a></li>
+                  <li class="w-full"><a class="menu-item" href="#illustration">Illustrations</a></li>
+                </ul>
+              </li>
+              <!-- test -->
+            </ul>
+
+            <!-- Hamburger Button-->
+            <div class="">
+              <button id="menu-btn" type="button" class="z-40 md:hidden block hamburger focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="menu" class="fixed top-0 bottom-0 left-0 hidden flex-col items-center self-end w-full min-h-screen px-4 pt-20 pb-60 overflow-y-auto text-primary-light bg-primary-trans transition-all duration-300">
+        <ul class="space-y-6 text-lg font-normal text-primary-light text-left">
+          <li>
+            <ul class="leading-10">
+              <li>
+                <a class="mobile-menu" href="#dev">Dev Tools</a>
+              </li>
+              <li>
+                <a class="mobile-menu" href="#html">HTML</a>
+              </li>
+              <li>
+                <a class="mobile-menu" href="#css">CSS</a>
+              </li>
+              <li>
+                <a class="mobile-menu" href="#js">Javascript</a>
+              </li>
+              <li>
+                <a class="mobile-menu" href="#images">Images &amp; Videos</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="leading-10">
+              <li>
+                <a class="mobile-menu" href="#design">Design Inspiration</a>
+              </li>
+              <li>
+                <a class="mobile-menu" href="#interaction">Interaction Design</a>
+              </li>
+              <li>
+                <a class="mobile-menu" href="#components">Components</a>
+              </li>
+              <li>
+                <a class="mobile-menu" href="#illustration">Illustration</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="leading-10">
+              <li>
+                <a class="mobile-menu" href="#fonts">Fonts</a>
+              </li>
+              <li>
+                <a class="mobile-menu" href="#icons">Icons</a>
+              </li>
+              <li>
+                <a class="mobile-menu" href="#color">Color Tools</a>
+              </li>
+              <li>
+                <a class="mobile-menu" href="#deploy">Deployment</a>
+              </li>
+              <li>
+                <a class="mobile-menu" href="#communities">Communities</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="max-w-7xl mx-auto h-screen flex items-center px-4 pt-32 xl:pt-52 pb-28 xl:pb-56">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-16 lg:gap-8">
+        <div class="md:w-1/2 lg:pl-32 md:pl-24">
+          <img class="w-44 sm:w-72 md:w-[26rem]" src="./assets/images/hero-img.svg" alt="Logo" />
+        </div>
+        <div class="md:w-1/2 flex flex-col gap-4 lg:gap-8">
+          <h2 class="font-serif text-2xl sm:text-3xl md:text-5xl text-center md:text-left leading-8 md:leading-snug text-wrap">Handful-tools for Front-End Developers &amp; Designers</h2>
+          <p class="font-js text-sm sm:text-base md:text-lg text-center md:text-left leading-8 text-wrap">フロントエンドデベトッパーとデザイナーのための便利ツール</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <!-- Section Container -->
+      <div class="max-w-3xl lg:max-w-4xl h-screen mx-auto pt-8 sm:pt-40 md:pt-60 pb-32 sm:pb-40 md:pb-48 lg:pb-60 px-6">
+        <div class="flex flex-col justify-center items-center mb-8 sm:mb-16">
+          <h2 class="relative quote font-serif text-2xl md:text-4xl text-center">Plain &amp; Smooth</h2>
+        </div>
+        <p class="font-sans text-base md:text-xl font-thin md:leading-loose">This is a go-to tool collection for website design and development that you can access quickly and easily, without having to navigate through bookmark folders repeatedly.</p>
+        <p class="font-sans text-base md:text-xl font-thin md:leading-loose">To reduce eye strain, I opted for lower colour tones and a plain style. This concept is what inspired "Plain & Smooth".</p>
+      </div>
+    </section>
+    <div class="bar"></div>
+
+    <!-- Dev Section -->
+    <section id="dev">
+      <!-- Section Container -->
+      <div class="section-container">
+        <!-- Flex Wrapper -->
+        <div class="flex-wrapper">
+          <img class="h-10 md:h-20" src="./assets/images/dev_icon.svg" alt="Development Logo" />
+          <img class="" src="./assets/images/devtools.svg" alt="" />
+        </div>
+        <!-- Item-boxes -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://code.visualstudio.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/vscode_logo.png" alt="Visual Studio Code" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Visual Studio Code</h3>
+              <p class="font-sans font-normal text-base">The most fully featured code editor with plenty of extensions.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.cacher.io/" target="_blank">
+              <img class="item-logo_rect" src="./assets/images/cacher_logo.png" alt="Cacher" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Cacher</h3>
+              <p class="font-sans font-normal text-base">Cacher is a code snippet organizer with a clear layout that enables you to search snippets easily and syncs with gist.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://pieces.app/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/pieces_logo.png" alt="Pieces" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Pieces</h3>
+              <p class="font-sans font-normal text-base">Pieces is a code snippet manager with generative AI. Quickly import snippets from VS code, browser, and even scan images.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://codepen.io/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/codepen-logo.png" alt="CodePen" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">CodePen</h3>
+              <p class="font-sans font-normal text-base">Essential tool for testing and showcasing HTML, CSS and JavaScript code snippets. No setup is required.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://codesandbox.io/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/codesandbox-logo.png" alt="CodeSandBox" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">CodeSandBox</h3>
+              <p class="font-sans font-normal text-base">Cloud-based development platform that works with javaScript included libraries such as React, Vue and Angular.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.devsamples.com/" target="_blank">
+              <img class="item-logo_rect" src="./assets/images/devsamples_logo.png" alt="Dev Samples" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Dev Samples</h3>
+              <p class="font-sans font-normal text-base">Dev Samples is a large snippet library that covers HTML, CSS, Git, multiple JS libraries and more.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="bar"></div>
+
+    <!-- HTML Section -->
+    <section id="html" class="bg-secondary">
+      <!-- Section Container -->
+      <div class="section-container">
+        <!-- Flex Wrapper -->
+        <div class="flex-wrapper">
+          <img class="h-10 md:h-20" src="./assets/images/html_icon.png" alt="Development Logo" />
+          <img class="" src="./assets/images/html.svg" alt="" />
+        </div>
+        <!-- Item-boxes -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/mdn_logo.png" alt="HTML5 Reference | MDN" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">HTML5 Reference | MDN</h3>
+              <p class="font-sans font-normal text-base">The essential reference for entire developers for the dairy basis development.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://css-tricks.com/snippets/html/glyphs/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/css-tricks_logo.png" alt="HTML Entity Reference CSS-Tricks" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">HTML Entity Reference CSS-Tricks</h3>
+              <p class="font-sans font-normal text-base">A helpful HTML entity reference gives you an HTML entity name, numeric code, hex code and ISO code.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="http://entity-lookup.leftlogic.com/" target="_blank">
+              <img class="item-logo_rect" src="./assets/images/entity-lookup_logo.png" alt="HTML Entity Lookup" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">HTML Entity Lookup</h3>
+              <p class="font-sans font-normal text-base">The useful entity search engine. You can search by regular letters for specific symbols.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="bar"></div>
+
+    <!-- CSS Section -->
+    <section id="css">
+      <!-- Section Container -->
+      <div class="section-container">
+        <!-- Flex Wrapper -->
+        <div class="flex-wrapper">
+          <img class="h-10 md:h-20" src="./assets/images/css_icon.svg" alt="Development Logo" />
+          <img class="" src="./assets/images/css.svg" alt="" />
+        </div>
+        <!-- Item-boxes -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/mdn_logo.png" alt="CSS Reference | MDN" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">CSS Reference | MDN</h3>
+              <p class="font-sans font-normal text-base">As with HTML, it’s the essential reference for the dairy basis development for entire developers.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://tympanus.net/codrops/css_reference/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/codrops_logo.png" alt="CSS Reference | Codrops" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">CSS Reference | Codrops</h3>
+              <p class="font-sans font-normal text-base">It’s a visually intuitive CSS reference with colourful tags. Easy search, quick solve.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://caniuse.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/caniuse_logo.png" alt="Can I use?" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Can I use?</h3>
+              <p class="font-sans font-normal text-base">One of the essential tools to check up on supported technologies on desktop and mobile web browsers.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://10015.io/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/100L5_logo.png" alt="100L5" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">100L5</h3>
+              <p class="font-sans font-normal text-base">CSS generator tools for cubic-bezier, glitch effect, glass morphism and many more creative visual elements.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://griddy.io/" target="_blank">
+              <img class="item-logo_rect" src="./assets/images/griddy_logo.png" alt="Griddy" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Griddy</h3>
+              <p class="font-sans font-normal text-base">Handy grid pattern generator to make complex layouts. It’s easy to build up your layout.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://neumorphism.io/#e0e0e0" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/neumorphism_logo.png" alt="Neumorphism.io" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Neumorphism.io</h3>
+              <p class="font-sans font-normal text-base">Awesome neumorphism generator to make smooth and beautiful elements. I used this to design this website.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://getcssscan.com/css-box-shadow-examples" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/beautifulcss-boxshadow_logo.png" alt="Beautiful CSS box-shadow Examples" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Beautiful CSS box-shadow Examples</h3>
+              <p class="font-sans font-normal text-base">Over 90 patterns of beautiful box-shadow samples. Just click to copy styles for your site design.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://shadows.brumm.af/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/smoothshadow_logo.png" alt="Smooth Shadow" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Smooth Shadow</h3>
+              <p class="font-sans font-normal text-base">Excellent intuitive UI box-shadow generator with a plugin also available on Figma.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://simplecss.eu/" target="_blank">
+              <img class="item-logo_rect" src="./assets/images/simplecsseu_logo.png" alt="Simplecss.eu" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Simplecss.eu</h3>
+              <p class="font-sans font-normal text-base">Media query generator for hundreds of mobile devices including iPads, iPhones, and Androids.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://sass-lang.com/dart-sass/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/dartsass_logo.png" alt="Dart Sass" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Dart Sass</h3>
+              <p class="font-sans font-normal text-base">The latest recommended version of CSS pre-processor that lets you use Javascript features.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://getbem.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/bem_logo.png" alt="BEM" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">BEM</h3>
+              <p class="font-sans font-normal text-base">A systematic CSS naming methodology to organize CSS classes and help you build reusable components.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://nerdcave.com/tailwind-cheat-sheet" target="_blank">
+              <img class="item-logo_rect" src="./assets/images/nerdcave_logo.png" alt="NERDCAVE" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">NERDCAVE</h3>
+              <p class="font-sans font-normal text-base">Handy tailwind cheat sheet. Easy search and double-click to copy codes to your projects.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="bar"></div>
+
+    <!-- JS Section -->
+    <section id="js" class="bg-secondary">
+      <!-- Section Container -->
+      <div class="section-container">
+        <!-- Flex Wrapper -->
+        <div class="flex-wrapper">
+          <img class="h-10 md:h-20" src="./assets/images/js_icon.svg" alt="Development Logo" />
+          <img class="" src="./assets/images/js.svg" alt="" />
+        </div>
+        <!-- Item-boxes -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/mdn_logo.png" alt="JavaScript Reference | MDN" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">JavaScript Reference | MDN</h3>
+              <p class="font-sans font-normal text-base">Another essential reference from MDN for A to Z of JavaScript.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/mdn_logo.png" alt="JavaScript Event Reference  | MDN" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">JavaScript Event Reference | MDN</h3>
+              <p class="font-sans font-normal text-base">This is the master reference of JavaScript DOM events.</p>
+            </a>
+          </li>
+
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://youmightnotneedjquery.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/youmightnot_logo.png" alt="You might not need jQuery" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">You might not need jQuery</h3>
+              <p class="font-sans font-normal text-base">A complete dictionary to translate jQuery to Vanilla JavaScript also can be used as a DOM manipulation reference.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="bar"></div>
+
+    <!-- Image Section -->
+    <section id="images">
+      <!-- Section Container -->
+      <div class="section-container">
+        <!-- Flex Wrapper -->
+        <div class="flex-wrapper">
+          <img class="h-10 md:h-20" src="./assets/images/camera_icon.svg" alt="Images & Video" />
+          <img class="" src="./assets/images/images.svg" alt="" />
+        </div>
+        <!-- Item-boxes -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://unsplash.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/unsplash_logo.png" alt="Unsplash" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Unsplash</h3>
+              <p class="font-sans font-normal text-base">One of the most familiar image resource sites also known as Figma plugin for high-resolution photos.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://o-dan.net/" target="_blank">
+              <img class="item-logo_rect" src="./assets/images/o-dan_logo.png" alt="O-DAN" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">O-DAN</h3>
+              <p class="font-sans font-normal text-base">A powerful search engine for high-quality photo images through multiple world-popular image resource sites.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://500px.com/" target="_blank">
+              <img class="item-logo_rect" src="./assets/images/500px_logo.png" alt="500px" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">500px</h3>
+              <p class="font-sans font-normal text-base">A global pro and high-amateur photo-sharing platform with the largest number of users based in Toronto, Canada.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.rawpixel.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/rawpixel_logo.png" alt="rawpixel" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">rawpixel</h3>
+              <p class="font-sans font-normal text-base">One of the high-quality photo resource sites with thousands of free images and premium collections.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://nappy.co/" target="_blank">
+              <img class="item-logo_rect" src="./assets/images/nappy_logo.png" alt="nappy" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">nappy</h3>
+              <p class="font-sans font-normal text-base">nappy is a website dedicated to providing beautiful, high-res photos of black and brown people.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.shopify.com/stock-photos" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/burst_logo.png" alt="Burst" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Burst</h3>
+              <p class="font-sans font-normal text-base">A high-quality free stock photo site powered by Shopify. It has a wide genre of photos stock and is easy to access.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://resourceboy.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/resourceboy_logo.png" alt="ResourceBoy" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">ResourceBoy</h3>
+              <p class="font-sans font-normal text-base">The best design resource site providing mockups, textures, effects and more. If you’re a designer, it’s worth checking it.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.foodiesfeed.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/foodiesfeed_logo.png" alt="Foodiesfeed" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Foodiesfeed</h3>
+              <p class="font-sans font-normal text-base">Foodiesfeed is the best food photo resource site that is completely free to download.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://coverr.co/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/coverr_logo.png" alt="Coverr" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Coverr</h3>
+              <p class="font-sans font-normal text-base">Coverr is an excellent free video resource site. The beta version of the stock music service is also available now.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="bar"></div>
+
+    <!-- Font Section -->
+    <section id="fonts" class="bg-secondary">
+      <!-- Section Container -->
+      <div class="section-container">
+        <!-- Flex Wrapper -->
+        <div class="flex-wrapper">
+          <img class="h-10 md:h-20" src="./assets/images/font_icon.svg" alt="Fonts & Typography" />
+          <img class="" src="./assets/images/fonts.svg" alt="" />
+        </div>
+        <!-- Item-boxes -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://fonts.google.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/googlefonts_logo.png" alt="Google Fonts" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Google Fonts</h3>
+              <p class="font-sans font-normal text-base">The most famous and reliable font resource by Google. You might want to check their constant update periodically.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.fontshare.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/fontshare_logo.png" alt="Fontshare" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Fontshare</h3>
+              <p class="font-sans font-normal text-base">Fontshare is a brand-new free font service run by Indian Type Foundry. You can use pro-grade excellent fonts for free.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.fontsquirrel.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/fontsquirrel_logo.png" alt="Font Squirrel" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Font Squirrel</h3>
+              <p class="font-sans font-normal text-base">Font Squirrel is a license-free font resource site which has a wide variety of font styles.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.myfonts.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/myfonts_logo.jpg" alt="MyFonts" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">MyFonts</h3>
+              <p class="font-sans font-normal text-base">The world's largest online font store, created by Bitstream Inc. The store has a massive stock of fonts you’ve ever seen.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://ifonts.xyz/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/ifonts_logo.png" alt="iFonts" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">iFonts</h3>
+              <p class="font-sans font-normal text-base">iFonts is a great place to discover & download thousands of free fonts for Personal Use.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="bar"></div>
+
+    <!-- Icon Section -->
+    <section id="icons">
+      <!-- Section Container -->
+      <div class="section-container">
+        <!-- Flex Wrapper -->
+        <div class="flex-wrapper">
+          <img class="h-10 md:h-20" src="./assets/images/icon_icon.svg" alt="Icons & Tools" />
+          <img class="" src="./assets/images/icons.svg" alt="" />
+        </div>
+        <!-- Item-boxes -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://fontawesome.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/fontawesome_logo.png" alt="Font Awesome" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Font Awesome</h3>
+              <p class="font-sans font-normal text-base">One of the popular icon toolkits for the web, based on CSS and Less. It’s easy to use with a useful icon lineup.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://icons8.com/line-awesome" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/icons8_logo.png" alt="Icons8" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Line Awesome</h3>
+              <p class="font-sans font-normal text-base">Line Awesome is icon-based outline font created as an alternative to Font Awesome 5.11. 2.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://lineicons.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/lineicons_logo.png" alt="LineIcons" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">LineIcons</h3>
+              <p class="font-sans font-normal text-base">LineIcons is a handcrafted icons library that consist of 8400 + free and premium icons.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://icons8.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/icons8_logo.png" alt="Icons8" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Icons8</h3>
+              <p class="font-sans font-normal text-base">Icons8 has the world’s largest collection of icons and allows us to recolour. The plugin is available on Figma as well.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://fonts.google.com/icons" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/material-icon.png" alt="Meterial Icon" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Meterial Icon</h3>
+              <p class="font-sans font-normal text-base">Well-known icon set which is a part of the Material Design System Google created.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.streamlinehq.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/streamline_logo.png" alt="Streamline" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Streamline</h3>
+              <p class="font-sans font-normal text-base">The world’s largest icon library with 170,000 systems. The plugin is available on Figma.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="bar"></div>
+
+    <!-- Color Section -->
+    <section id="color" class="bg-secondary">
+      <!-- Section Container -->
+      <div class="section-container">
+        <!-- Flex Wrapper -->
+        <div class="flex-wrapper">
+          <img class="h-10 md:h-20" src="./assets/images/color_icon.svg" alt="Color Tools" />
+          <img class="" src="./assets/images/colors.svg" alt="" />
+        </div>
+        <!-- Item-boxes -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://coolors.co/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/coolors_logo.png" alt="Coolors" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Coolors</h3>
+              <p class="font-sans font-normal text-base">Coolors is a generative colour palette tool that can quickly create thousands of colour schemes.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="http://colorsafe.co/" target="_blank">
+              <img class="item-logo_rect" src="./assets/images/colorsafe_logo.png" alt="Color Safe" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Color Safe</h3>
+              <p class="font-sans font-normal text-base">Excellent colour evaluation and generator tool that provides you WCAG Guidelines of text and background contrast ratio.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://brandpalettes.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/brandpalette_logo.png" alt="Brand Palette" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Brand Palette</h3>
+              <p class="font-sans font-normal text-base">A corporate identity library that provides corporate colours, typeface and brand logo methodologies.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="http://colormind.io/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/colormind_logo.png" alt="Colormind" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Colormind</h3>
+              <p class="font-sans font-normal text-base">An excellent colour generator powered by AI that can generate colour palettes from pictures, videos and art.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://gradienthunt.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/gradienthunt_logo.png" alt="Gradient Hunt" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Gradient Hunt</h3>
+              <p class="font-sans font-normal text-base">A beautiful gradient gallery that has thousands of different colour gradients you can use or download in png.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="bar"></div>
+
+    <!-- Design Section -->
+    <section id="design">
+      <!-- Section Container -->
+      <div class="section-container">
+        <!-- Flex Wrapper -->
+        <div class="flex-wrapper">
+          <img class="h-10 md:h-20" src="./assets/images/design_icon.svg" alt="Design Inspiration" />
+          <img class="" src="./assets/images/design.svg" alt="" />
+        </div>
+        <!-- Item-boxes -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.awwwards.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/awwwards_logo.png" alt="Awwwards" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Awwwards</h3>
+              <p class="font-sans font-normal text-base">You'll see here the best innovative web designs that are recognized and promoted from all over the world.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://thefwa.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/fwa_logo.png" alt="FWA" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">FWA</h3>
+              <p class="font-sans font-normal text-base">Another international award platform. The name stands for “Favorite Website Awards”.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://dribbble.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/dribbble_logo.png" alt="Dribbble" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Dribbble</h3>
+              <p class="font-sans font-normal text-base">One of the classic galleries to discover many sophisticated designs, especially for web and apps.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.pinterest.ca/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/pinterest_logo.png" alt="Pinterest" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Pinterest</h3>
+              <p class="font-sans font-normal text-base">This is my favourite design scrap gallery where you can get inspiration from various genres of design. Hit me up there!</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://1guu.jp/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/1guu_logo.png" alt="1GUU" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">1GUU</h3>
+              <p class="font-sans font-normal text-base">Japan-based international web design gallery. Easy to find your inspiration through animated thumbnails.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://bm.s5-style.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/s5-style_logo.png" alt="S5-Style" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">S5-Style</h3>
+              <p class="font-sans font-normal text-base">Another Japan-based web design gallery that curates over 8,000 websites in versatile categories.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://81-web.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/81-web_logo.png" alt="81-web.com" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">81-web.com</h3>
+              <p class="font-sans font-normal text-base">One of the neat web design curations focuses on local Japanese sites.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://muuuuu.org/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/muuuuu_logo.png" alt="Muuuuu.org" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Muuuuu.org</h3>
+              <p class="font-sans font-normal text-base">This is also a Japan-based curation site that mainly focuses on local products. They update the collection frequently.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://brilliantdesign.work/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/brilliantdesign_logo.png" alt="Brilliant Design Collect" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Brilliant Design Collect</h3>
+              <p class="font-sans font-normal text-base">The collection on this curated site conceptualized functionality in the most aesthetic proportions.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://sankoudesign.com/" target="_blank">
+              <img class="item-logo_rect" src="./assets/images/sankou_logo.png" alt="SANKOU!" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">SANKOU!</h3>
+              <p class="font-sans font-normal text-base">Simple and handy local web design gallery. You can bookmark your favourites.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://rdlp.jp/lp-archive/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/lparchive_logo.png" alt="LP ARCHIVE" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">LP ARCHIVE</h3>
+              <p class="font-sans font-normal text-base">High-quality landing page design collection from Japanese websites.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://wave.webaim.org/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/wave_logo.png" alt="WAVE" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">WAVE</h3>
+              <p class="font-sans font-normal text-base">WAVE is an essential tool for evaluating web accessibility based on Web Content Accessibility Guideline (WCAG).</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="bar"></div>
+
+    <!-- Interaction Section -->
+    <section id="interaction" class="bg-secondary">
+      <!-- Section Container -->
+      <div class="section-container">
+        <!-- Flex Wrapper -->
+        <div class="flex-wrapper">
+          <img class="h-10 md:h-20" src="./assets/images/interaction_icon.svg" alt="Interaction Design Resources" />
+          <img class="" src="./assets/images/incteraction.svg" alt="" />
+        </div>
+        <!-- Item-boxes -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://tympanus.net/codrops/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/codrops_logo.png" alt="Codrops" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Codrops</h3>
+              <p class="font-sans font-normal text-base">This is my grimoire of the interaction design. If you’re a designer, you must check it.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://codepen.io/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/codepen-logo.png" alt="CodePen" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">CodePen</h3>
+              <p class="font-sans font-normal text-base">Essential tool for testing and showcasing HTML, CSS and JavaScript code snippets. No setup is required.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="bar"></div>
+
+    <!-- Components Section -->
+    <section id="components">
+      <!-- Section Container -->
+      <div class="section-container">
+        <!-- Flex Wrapper -->
+        <div class="flex-wrapper">
+          <img class="h-10 md:h-20" src="./assets/images/components_icon.svg" alt="Component Design" />
+          <img class="" src="./assets/images/components.svg" alt="" />
+        </div>
+        <!-- Item-boxes -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://modulesss.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/modulesss_logo.png" alt="Modulesss" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Modulesss</h3>
+              <p class="font-sans font-normal text-base">Modulesss is a components design gallery collected from Japanese websites.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://partsdesign.net/" target="_blank">
+              <img class="item-logo_rect" src="./assets/images/parts_logo.png" alt="Parts." />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Parts.</h3>
+              <p class="font-sans font-normal text-base">Parts. is a design gallery for specific pages, components, elements, and visual graphics.</p>
+            </a>
+          </li>
+
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.landingfolio.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/landingfolio_logo.png" alt="Landingfolio" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Landingfolio</h3>
+              <p class="font-sans font-normal text-base">Landingfolio features a landing page design gallery and also lists other pages and components.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://codyhouse.co/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/codyhouse_logo.png" alt="Codyhouse" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Codyhouse</h3>
+              <p class="font-sans font-normal text-base">A lightweight framework for building accessible, bespoke interfaces.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="bar"></div>
+
+    <!-- Illustration Section -->
+    <section id="illustration" class="bg-secondary">
+      <!-- Section Container -->
+      <div class="section-container">
+        <!-- Flex Wrapper -->
+        <div class="flex-wrapper">
+          <img class="h-10 md:h-20" src="./assets/images/illustration_icon.svg" alt="Illustration Resources" />
+          <img class="" src="./assets/images/illustration.svg" alt="" />
+        </div>
+        <!-- Item-boxes -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://undraw.co/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/undraw_logo.png" alt="unDraw" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">unDraw</h3>
+              <p class="font-sans font-normal text-base">unDraw is a set of Open-source illustrations for any idea you can imagine and create.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.humaaans.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/humaaans_logo.png" alt="humaaans" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">humaaans</h3>
+              <p class="font-sans font-normal text-base">Brilliant tool for illustration of people. You can customize by choosing every piece of parts.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://blush.design/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/blush_logo.png" alt="blush" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">blush</h3>
+              <p class="font-sans font-normal text-base">This is also a customizable illustration tool. The handy plugin is available on Figma!</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <!-- <li class="item-g">
+              <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://stubborn.rocks/" target="_blank">
+                <img class="item-logo_sq" src="./assets/images/stubborn_logo.png" alt="Stubborn" />
+                <h3 class="font-serif font-semibold text-lg text-center md:text-left">stubborn</h3>
+                <p class="font-sans font-normal text-base">Lorem ipsum dolor sit amet consectetur. Purus malesuada dolor eget pretium pulvinar fermentum.</p>
+              </a>
+            </li> -->
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://en.ac-illust.com/" target="_blank">
+              <img class="item-logo_rect" src="./assets/images/acillust_logo.png" alt="illustAC" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">illustAC</h3>
+              <p class="font-sans font-normal text-base">One of the best websites to get free vector images that you can use for both your personal and professional purposes.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://tyoudoii-illust.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/chodoii_logo.png" alt="ちょうどいいイラスト" />
+              <h3 class="font-ja font-semibold text-lg text-center md:text-left">ちょうどいいイラスト</h3>
+              <p class="font-sans font-normal text-base">Pro-quality illustration gallery run by a professional illustrator. All illustrations are free and available commercial use!</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.transparenttextures.com/" target="_blank">
+              <img class="h-4 mb-2" src="./assets/images/transparenttextures_logo.png" alt="TRANSPARENT TEXTURES" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">TRANSPARENT TEXTURES</h3>
+              <p class="font-sans font-normal text-base">Awesome quality of texture collection that you can download them free and use with any background colours!</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="bar"></div>
+
+    <!-- Deploy Section -->
+    <section id="deploy">
+      <!-- Section Container -->
+      <div class="section-container">
+        <!-- Flex Wrapper -->
+        <div class="flex-wrapper">
+          <img class="h-10 md:h-20" src="./assets/images/deploy_icon.svg" alt="Deployment, testing Resources" />
+          <img class="" src="./assets/images/deployment.svg" alt="" />
+        </div>
+        <!-- Item-boxes -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://frontendchecklist.io/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/front-end-checklist_logo.png" alt="The Front-End Checklist" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">The Front-End Checklist</h3>
+              <p class="font-sans font-normal text-base">is a list of all elements you need to have or to test before launching your website.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://frontendchecklist.io/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/front-end-performance-checklist_logo.png" alt="The Front-End Checklist" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">The Front-End Performance Checklist</h3>
+              <p class="font-sans font-normal text-base">is an list of elements you should check or at least be aware of, as a Front-End developer and apply to your project .</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://pagespeed.web.dev/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/pagespeed_logo.png" alt="Page Speed Insight" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Page Speed Insight</h3>
+              <p class="font-sans font-normal text-base">Measure the page performance on both mobile and desktop devices, and provides suggestions to improve your site.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://marketingplatform.google.com/about/analytics/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/googleanalytics_logo.png" alt="Google Analytics" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Google Analytics</h3>
+              <p class="font-sans font-normal text-base">A web analytics service that provides statistics and basic analytical tools for SEO and marketing purposes.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://cdnjs.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/cdnjs_logo.png" alt="cdnjs" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">cdnjs</h3>
+              <p class="font-sans font-normal text-base">cdnjd provides 4,000+ JavaScript and CSS libraries as free and open-source CDN service.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.jsdelivr.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/jsdelivr_logo.png" alt="jsDelivr" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">jsDelivr</h3>
+              <p class="font-sans font-normal text-base">jsDelivr is also a public and open-source CDN service provider. It provides libraries that are hosted on npm and Github.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://www.netlify.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/netlify_logo.png" alt="Netlify" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Netlify</h3>
+              <p class="font-sans font-normal text-base">An all-in-one platform that makes it incredibly easy to deploy static web applications.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://vercel.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/vercel_logo.jpg" alt="Vercel" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Vercel</h3>
+              <p class="font-sans font-normal text-base">A modern platform for building, deploying, and scaling serverless apps and static websites.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://realfavicongenerator.net/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/realfavicon_logo.png" alt="Real Favicon Generator" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Real Favicon Generator</h3>
+              <p class="font-sans font-normal text-base">is an easy and quick online favicon generator. It also generates icons for mobile apps and more.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="bar"></div>
+
+    <!-- Communities Section -->
+    <section id="communities" class="bg-secondary">
+      <!-- Section Container -->
+      <div class="section-container">
+        <!-- Flex Wrapper -->
+        <div class="flex-wrapper">
+          <img class="h-10 md:h-20" src="./assets/images/comunity_icon.svg" alt="Dev Communities" />
+          <img class="" src="./assets/images/community.svg" alt="" />
+        </div>
+        <!-- Item-boxes -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://stackoverflow.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/stuckoverflow_logo.png" alt="Stuck Overflow" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Stack Overflow</h3>
+              <p class="font-sans font-normal text-base">No explanations needed, it’s the largest, most trusted online knowledge community for developers.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://dev.to/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/dev_logo.png" alt="DEV" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">DEV</h3>
+              <p class="font-sans font-normal text-base">DEV is a community of software developers getting together to help one another out.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://zenn.dev/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/zenn_log@2x.png" alt="Zenn" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Zenn</h3>
+              <p class="font-sans font-normal text-base">A Japan based tech community to share knowledge through blog posts for every engineers.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://qiita.com/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/quitta_logo.jpg" alt="Qiita" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Qiita</h3>
+              <p class="font-sans font-normal text-base">Another Japan based tech community. Each article are very explanatory with details, charts, images and codes.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://techfeed.io/" target="_blank">
+              <img class="item-logo_sq" src="./assets/images/techfeed_logo.png" alt="TECH FEED" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">TECH FEED</h3>
+              <p class="font-sans font-normal text-base">A powerful tech information platform that provides news and articles about cutting edge technology and engineering.</p>
+            </a>
+          </li>
+          <!-- Item -->
+          <li class="item-g">
+            <a class="p-7 flex flex-col justify-center items-center md:items-start space-y-2" href="https://medium.com/" target="_blank">
+              <img class="item-logo_rect" src="./assets/images/medium_logo.png" alt="Medium" />
+              <h3 class="font-serif font-semibold text-lg text-center md:text-left">Medium</h3>
+              <p class="font-sans font-normal text-base">A online publishing platform. You’ll easily find some useful articles about design theories and technical knowledges.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-secondary-regular">
+      <!-- Back to Top btn -->
+      <a class="btn-top" href="#hero"><i class="fa-solid fa-angle-up text-3xl lg:text-4xl font-extrabold text-primary-regular"></i></a>
+      <!-- Footer Container -->
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start pt-16 pb-6 md:pb-24 px-6 space-y-10 md:space-y-0">
+        <h2 class="font-logo text-3xl font-semibold text-primary-light hover:text-secondary-light"><a href="#">Front-Enders</a></h2>
+        <ul class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-32 self-center text-base font-normal text-primary-light text-left sm:text-left">
+          <li>
+            <ul class="relative leading-9">
+              <li>
+                <a href="#dev"><span class="underline">Dev Tools</span></a>
+              </li>
+              <li>
+                <a href="#html"><span class="underline">HTML</span></a>
+              </li>
+              <li>
+                <a href="#css"><span class="underline">CSS</span></a>
+              </li>
+              <li>
+                <a href="#js"><span class="underline">Javascript</span></a>
+              </li>
+              <li>
+                <a href="#images"><span class="underline">Images &amp; Videos</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="leading-9">
+              <li>
+                <a href="#design"><span class="underline">Design Inspiration</span></a>
+              </li>
+              <li>
+                <a href="#interaction"><span class="underline">Interaction Design</span></a>
+              </li>
+              <li>
+                <a href="#components"><span class="underline">Components</span></a>
+              </li>
+              <li>
+                <a href="#illustration"><span class="underline">Illustration</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="leading-9">
+              <li>
+                <a href="#fonts"><span class="underline">Fonts</span></a>
+              </li>
+              <li>
+                <a href="#icons"><span class="underline">Icons</span></a>
+              </li>
+              <li>
+                <a href="#color"><span class="underline">Color Tools</span></a>
+              </li>
+              <li>
+                <a href="#deploy"><span class="underline">Deployment</span></a>
+              </li>
+              <li>
+                <a href="#communities"><span class="underline">Communities</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="flex flex-row items-center lg:items-start pb-10 lg:pb-0 space-x-8 lg:space-x-8 text-2xl text-primary-light">
+          <li>
+            <a class="hover:text-secondary-light" href="https://www.instagram.com/masadnk/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a class="hover:text-secondary-light" href="https://twitter.com/Masaknd_dsgn" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          </li>
+          <li>
+            <a class="hover:text-secondary-light" href="https://github.com/Masaknd" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li>
+            <a class="hover:text-secondary-light" href="https://www.linkedin.com/in/masahiro-kondo/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+      <p class="pb-4 font-normal text-xs text-center text-primary-light">&copy;2023 Front-Enders All Right Reserved</p>
+    </footer>
+  </body>
+</html>
