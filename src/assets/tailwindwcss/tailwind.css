@@ -133,12 +133,12 @@
 
 /* Menu screens */
 .menu {
-  @apply absolute top-[42px] lg:top-[55px] left-0 invisible flex flex-wrap justify-start w-full   bg-[--primary-trans] text-primary-light text-center;
+  @apply absolute top-[42px] lg:top-[55px] left-0 invisible flex flex-wrap justify-start w-full   bg-primary-trans text-primary-light text-center;
 }
 
 /* Menu Items */
 .menu-item {
-  @apply block py-2 text-sm lg:text-base font-light leading-3 hover:bg-[--primary-dark];
+  @apply block py-2 text-sm lg:text-base font-light leading-3 hover:bg-primary-dark;
 }
 
 /* Accordion Menu */
@@ -155,13 +155,13 @@
 }
 
 .underline:hover {
-  @apply text-[--secondary-light];
+  @apply text-secondary-light;
 }
 
 .underline::before {
   content: "";
   transition: cubic-bezier(0.13, 0.78, 0.38, 0.98);
-  @apply -z-10 absolute bottom-[5%] left-0 w-full h-[1px] -mb-1 bg-[--secondary-light] scale-x-0 origin-bottom-left duration-300;
+  @apply -z-10 absolute bottom-[5%] left-0 w-full h-[1px] -mb-1 bg-secondary-light scale-x-0 origin-bottom-left duration-300;
 }
 
 .underline:hover::before {
