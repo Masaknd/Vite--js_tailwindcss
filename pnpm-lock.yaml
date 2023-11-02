@@ -7,7 +7,7 @@ settings:
 devDependencies:
   '@nabla/vite-plugin-eslint':
     specifier: github:nabla/vite-plugin-eslint
-    version: github.com/nabla/vite-plugin-eslint/ff77716d5788423847fabda2f906a3de69b1e6bd(eslint@8.45.0)(vite@4.4.9)
+    version: github.com/nabla/vite-plugin-eslint/cd756bbb58484759226264585372bf9452336d22(eslint@8.45.0)(vite@4.4.9)
   autoprefixer:
     specifier: ^10.4.14
     version: 10.4.14(postcss@8.4.28)
@@ -53,6 +53,9 @@ devDependencies:
   prettier:
     specifier: ^3.0.0
     version: 3.0.0
+  prettier-plugin-tailwindcss:
+    specifier: ^0.5.6
+    version: 0.5.6(prettier@3.0.0)
   sass:
     specifier: ^1.63.6
     version: 1.63.6
@@ -77,6 +80,9 @@ devDependencies:
   stylelint-scss:
     specifier: ^5.0.1
     version: 5.0.1(stylelint@15.10.1)
+  tailwind-merge:
+    specifier: ^2.0.0
+    version: 2.0.0
   tailwindcss:
     specifier: ^3.3.3
     version: 3.3.3(ts-node@10.9.1)
@@ -121,6 +127,13 @@ packages:
       '@babel/helper-validator-identifier': 7.22.5
       chalk: 2.4.2
       js-tokens: 4.0.0
+    dev: true
+
+  /@babel/runtime@7.23.2:
+    resolution: {integrity: sha512-mM8eg4yl5D6i3lu2QKPuPH4FArvJ8KhTofbE7jwMUv9KX5mBvwPAqnV3MlyBNqdp9RyRKP6Yck8TrfYrPvX3bg==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.0
     dev: true
 
   /@cspotcode/source-map-support@0.8.1:
@@ -4154,6 +4167,61 @@ packages:
       fast-diff: 1.3.0
     dev: true
 
+  /prettier-plugin-tailwindcss@0.5.6(prettier@3.0.0):
+    resolution: {integrity: sha512-2Xgb+GQlkPAUCFi3sV+NOYcSI5XgduvDBL2Zt/hwJudeKXkyvRS65c38SB0yb9UB40+1rL83I6m0RtlOQ8eHdg==}
+    engines: {node: '>=14.21.3'}
+    peerDependencies:
+      '@ianvs/prettier-plugin-sort-imports': '*'
+      '@prettier/plugin-pug': '*'
+      '@shopify/prettier-plugin-liquid': '*'
+      '@shufo/prettier-plugin-blade': '*'
+      '@trivago/prettier-plugin-sort-imports': '*'
+      prettier: ^3.0
+      prettier-plugin-astro: '*'
+      prettier-plugin-css-order: '*'
+      prettier-plugin-import-sort: '*'
+      prettier-plugin-jsdoc: '*'
+      prettier-plugin-marko: '*'
+      prettier-plugin-organize-attributes: '*'
+      prettier-plugin-organize-imports: '*'
+      prettier-plugin-style-order: '*'
+      prettier-plugin-svelte: '*'
+      prettier-plugin-twig-melody: '*'
+    peerDependenciesMeta:
+      '@ianvs/prettier-plugin-sort-imports':
+        optional: true
+      '@prettier/plugin-pug':
+        optional: true
+      '@shopify/prettier-plugin-liquid':
+        optional: true
+      '@shufo/prettier-plugin-blade':
+        optional: true
+      '@trivago/prettier-plugin-sort-imports':
+        optional: true
+      prettier-plugin-astro:
+        optional: true
+      prettier-plugin-css-order:
+        optional: true
+      prettier-plugin-import-sort:
+        optional: true
+      prettier-plugin-jsdoc:
+        optional: true
+      prettier-plugin-marko:
+        optional: true
+      prettier-plugin-organize-attributes:
+        optional: true
+      prettier-plugin-organize-imports:
+        optional: true
+      prettier-plugin-style-order:
+        optional: true
+      prettier-plugin-svelte:
+        optional: true
+      prettier-plugin-twig-melody:
+        optional: true
+    dependencies:
+      prettier: 3.0.0
+    dev: true
+
   /prettier@2.8.8:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
@@ -4261,6 +4329,10 @@ packages:
     dependencies:
       indent-string: 5.0.0
       strip-indent: 4.0.0
+    dev: true
+
+  /regenerator-runtime@0.14.0:
+    resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
     dev: true
 
   /regexp.prototype.flags@1.5.0:
@@ -4783,6 +4855,12 @@ packages:
       strip-ansi: 6.0.1
     dev: true
 
+  /tailwind-merge@2.0.0:
+    resolution: {integrity: sha512-WO8qghn9yhsldLSg80au+3/gY9E4hFxIvQ3qOmlpXnqpDKoMruKfi/56BbbMg6fHTQJ9QD3cc79PoWqlaQE4rw==}
+    dependencies:
+      '@babel/runtime': 7.23.2
+    dev: true
+
   /tailwindcss@3.3.3(ts-node@10.9.1):
     resolution: {integrity: sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w==}
     engines: {node: '>=14.0.0'}
@@ -5268,9 +5346,9 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/nabla/vite-plugin-eslint/ff77716d5788423847fabda2f906a3de69b1e6bd(eslint@8.45.0)(vite@4.4.9):
-    resolution: {tarball: https://codeload.github.com/nabla/vite-plugin-eslint/tar.gz/ff77716d5788423847fabda2f906a3de69b1e6bd}
-    id: github.com/nabla/vite-plugin-eslint/ff77716d5788423847fabda2f906a3de69b1e6bd
+  github.com/nabla/vite-plugin-eslint/cd756bbb58484759226264585372bf9452336d22(eslint@8.45.0)(vite@4.4.9):
+    resolution: {tarball: https://codeload.github.com/nabla/vite-plugin-eslint/tar.gz/cd756bbb58484759226264585372bf9452336d22}
+    id: github.com/nabla/vite-plugin-eslint/cd756bbb58484759226264585372bf9452336d22
     name: '@nabla/vite-plugin-eslint'
     version: 1.5.0
     peerDependencies:
