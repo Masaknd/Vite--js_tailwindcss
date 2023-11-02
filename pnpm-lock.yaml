@@ -86,6 +86,9 @@ devDependencies:
   tailwindcss:
     specifier: ^3.3.3
     version: 3.3.3(ts-node@10.9.1)
+  tailwindcss-easing:
+    specifier: ^0.2.1
+    version: 0.2.1(tailwindcss@3.3.3)
   vite:
     specifier: ^4.4.9
     version: 4.4.9(@types/node@20.5.0)(sass@1.63.6)
@@ -4859,6 +4862,14 @@ packages:
     resolution: {integrity: sha512-WO8qghn9yhsldLSg80au+3/gY9E4hFxIvQ3qOmlpXnqpDKoMruKfi/56BbbMg6fHTQJ9QD3cc79PoWqlaQE4rw==}
     dependencies:
       '@babel/runtime': 7.23.2
+    dev: true
+
+  /tailwindcss-easing@0.2.1(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-MfvXQGJOc3/o2ot98Baw7uc/yxon55AdIpC4eCG9H4dQsTzR8G4kvnzT5n6nYdRgixZhaovdPANSBlVHwYg0sA==}
+    peerDependencies:
+      tailwindcss: '>=2.0.0'
+    dependencies:
+      tailwindcss: 3.3.3(ts-node@10.9.1)
     dev: true
 
   /tailwindcss@3.3.3(ts-node@10.9.1):
