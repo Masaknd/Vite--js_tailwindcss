@@ -50,7 +50,7 @@ Masaknd:
 
 ## Version History
 
-- 0.1
+- bug detected
   Problem: inconsistency of the result of running dev mode and build
   details: background: url() images paths are not transpile correctly when running build mode
 
