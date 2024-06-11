@@ -7,7 +7,7 @@ settings:
 devDependencies:
   '@nabla/vite-plugin-eslint':
     specifier: github:nabla/vite-plugin-eslint
-    version: github.com/nabla/vite-plugin-eslint/cd756bbb58484759226264585372bf9452336d22(eslint@8.45.0)(vite@5.0.12)
+    version: github.com/nabla/vite-plugin-eslint/cd756bbb58484759226264585372bf9452336d22(eslint@8.45.0)(vite@5.0.13)
   autoprefixer:
     specifier: ^10.4.14
     version: 10.4.14(postcss@8.4.33)
@@ -90,14 +90,14 @@ devDependencies:
     specifier: ^0.2.1
     version: 0.2.1(tailwindcss@3.3.3)
   vite:
-    specifier: ^5.0.12
-    version: 5.0.12(@types/node@20.11.10)(sass@1.63.6)
+    specifier: ^5.0.13
+    version: 5.0.13(@types/node@20.11.10)(sass@1.63.6)
   vite-plugin-handlebars:
     specifier: ^1.6.0
     version: 1.6.0(sass@1.63.6)
   vite-plugin-rewrite-all:
     specifier: ^1.0.1
-    version: 1.0.1(vite@5.0.12)
+    version: 1.0.1(vite@5.0.13)
 
 packages:
 
@@ -1074,12 +1074,8 @@ packages:
   /@types/eslint@8.44.2:
     resolution: {integrity: sha512-sdPRb9K6iL5XZOmBubg8yiFp5yS/JdUDQsq5e6h95km91MCYMuvp7mh1fjPEYUhvHepKpZOjnEaMBR4PxjWDzg==}
     dependencies:
-      '@types/estree': 1.0.1
+      '@types/estree': 1.0.5
       '@types/json-schema': 7.0.12
-    dev: true
-
-  /@types/estree@1.0.1:
-    resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
     dev: true
 
   /@types/estree@1.0.5:
@@ -5361,14 +5357,14 @@ packages:
       - stylus
     dev: true
 
-  /vite-plugin-rewrite-all@1.0.1(vite@5.0.12):
+  /vite-plugin-rewrite-all@1.0.1(vite@5.0.13):
     resolution: {integrity: sha512-W0DAchC8ynuQH0lYLIu5/5+JGfYlUTRD8GGNtHFXRJX4FzzB9MajtqHBp26zq/ly9sDt5BqrfdT08rv3RbB0LQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       vite: ^2.0.0 || ^3.0.0 || ^4.0.0
     dependencies:
       connect-history-api-fallback: 1.6.0
-      vite: 5.0.12(@types/node@20.11.10)(sass@1.63.6)
+      vite: 5.0.13(@types/node@20.11.10)(sass@1.63.6)
     dev: true
 
   /vite@2.9.17(sass@1.63.6):
@@ -5396,8 +5392,8 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vite@5.0.12(@types/node@20.11.10)(sass@1.63.6):
-    resolution: {integrity: sha512-4hsnEkG3q0N4Tzf1+t6NdN9dg/L3BM+q8SWgbSPnJvrgH2kgdyzfVJwbR1ic69/4uMJJ/3dqDZZE5/WwqW8U1w==}
+  /vite@5.0.13(@types/node@20.11.10)(sass@1.63.6):
+    resolution: {integrity: sha512-/9ovhv2M2dGTuA+dY93B9trfyWMDRQw2jdVBhHNP6wr0oF34wG2i/N55801iZIpgUpnHDm4F/FabGQLyc+eOgg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -5544,7 +5540,7 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/nabla/vite-plugin-eslint/cd756bbb58484759226264585372bf9452336d22(eslint@8.45.0)(vite@5.0.12):
+  github.com/nabla/vite-plugin-eslint/cd756bbb58484759226264585372bf9452336d22(eslint@8.45.0)(vite@5.0.13):
     resolution: {tarball: https://codeload.github.com/nabla/vite-plugin-eslint/tar.gz/cd756bbb58484759226264585372bf9452336d22}
     id: github.com/nabla/vite-plugin-eslint/cd756bbb58484759226264585372bf9452336d22
     name: '@nabla/vite-plugin-eslint'
@@ -5556,5 +5552,5 @@ packages:
       '@types/eslint': 8.44.2
       chalk: 4.1.2
       eslint: 8.45.0
-      vite: 5.0.12(@types/node@20.11.10)(sass@1.63.6)
+      vite: 5.0.13(@types/node@20.11.10)(sass@1.63.6)
     dev: true
